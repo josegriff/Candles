@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css" />
+    <script defer src="script.js"></script> <!-- Include the script.js file -->
+    <title>Bristol Candles - Checkout</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_items">
+            <div class="left-links">
+                <a href="index.html" class="logo">Bristol Candles</a>
+            </div>
+            <div class="right-links">
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="basket.html">Basket</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="checkout-display">
+        <h2>Checkout</h2>
+        <p>Billing Information</p>
+    </div>
+
+    <form id="checkoutForm" action="submit_order.php" method="post">
+        <label for="billingName">Full Name:</label><br>
+        <input type="text" id="billingName" name="billingName" required><br>
+        
+        <label for="billingAddress">House Address:</label><br>
+        <textarea id="billingAddress" name="billingAddress" required></textarea><br>
+        
+        <label for="billingCity_Town">City / Town:</label><br>
+        <textarea id="billingCity_Town" name="billingCity_Town" required></textarea><br>
+
+        <label for="billingPostCode">Post Code:</label><br>
+        <textarea id="billingPostCode" name="billingPostCode" required></textarea><br>
+
+        <label for="billingEmail">Email:</label><br>
+        <input type="email" id="billingEmail" name="billingEmail" required><br>
+        
+        <label for="billingPhone">Phone:</label><br>
+        <input type="tel" id="billingPhone" name="billingPhone" required><br>
+        
+        <h3>Shipping Information</h3>
+        <input type="checkbox" id="sameAsBilling" onchange="copyBillingInfo()"> Same as billing<br>
+
+        <br><label for="shippingName">Full Name:</label><br>
+        <input type="text" id="shippingName" name="shippingName" required><br>
+
+        <label for="shippingAddress">House Address:</label><br>
+        <textarea id="shippingAddress" name="shippingAddress" required></textarea><br>
+
+        <label for="shippingCity_Town">City / Town:</label><br>
+        <textarea id="shippingCity_Town" name="shippingCity_Town" required></textarea><br>
+
+        <label for="shippingPostCode">Post Code:</label><br>
+        <textarea id="shippingPostCode" name="shippingPostCode" required></textarea><br>
+
+        <label for="shippingEmail">Email:</label><br>
+        <input type="email" id="shippingEmail" name="shippingEmail" required><br>
+
+        <label for="shippingPhone">Phone:</label><br>
+        <input type="tel" id="shippingPhone" name="shippingPhone" required><br>
+        <a href="confirm.html">
+            <button type="submit">Proceed to Payment</button>
+        </a>
+       
+      </form>
+      
+      <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-logo">
+              <a href="index.html" class="logo">Bristol Candles</a>
+          </div>
+          <div class="footer-links">
+              <a href="shop.html">Shop</a>
+              <a href="about.html">About</a>
+              <a href="basket.html">Basket</a>
+              <a href="checkout.html">Checkout</a>
+          </div>
+          <div class="footer-social">
+              <!-- Add your social media icons or links here -->
+              <a href="#" target="_blank">Facebook</a>
+              <a href="#" target="_blank">Twitter</a>
+              <a href="#" target="_blank">Instagram</a>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Bristol Candles. All rights reserved.</p>
+      </div>
+  </footer>
+  
+      <script>
+      function copyBillingInfo() {
+        if (document.getElementById('sameAsBilling').checked) {
+          document.getElementById('shippingName').value = document.getElementById('billingName').value;
+          document.getElementById('shippingAddress').value = document.getElementById('billingAddress').value;
+          document.getElementById('shippingCity_Town').value = document.getElementById('billingCity_Town').value;
+          document.getElementById('shippingPostCode').value = document.getElementById('billingPostCode').value;
+          document.getElementById('shippingEmail').value = document.getElementById('billingEmail').value;
+          document.getElementById('shippingPhone').value = document.getElementById('billingPhone').value;
+        } else {
+          document.getElementById('shippingName').value = '';
+          document.getElementById('shippingAddress').value = '';
+          document.getElementById('shippingCity_Town').value = '';
+          document.getElementById('shippingPostCode').value = '';
+          document.getElementById('shippingEmail').value = '';
+          document.getElementById('shippingPhone').value = '';
+        }
+      }
+      </script>
+</body>
+</html>

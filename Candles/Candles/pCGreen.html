@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css" />
+    <title>Bristol Candles - College Green</title>
+    <!-- Add your JavaScript file for handling basket functionality -->
+    <script src="basket.js"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f3eb;
+            margin: 0;
+        }
+
+        .product-details {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .product-details h2 {
+            color: #4d3832;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-details img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details p {
+            color: #765e58;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .product-details button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #4d3832;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-details button:hover {
+            background-color: #765e58;
+        }
+
+        .featured-products {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .featured-products h2 {
+            color: #4d3832;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            margin-bottom: 30px;
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            color: #4d3832;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #765e58;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .product a {
+            color: #4d3832;
+            text-decoration: none;
+            display: inline-block;
+            background-color: #f9f3eb;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 230ms, color 230ms;
+        }
+
+        .product a:hover {
+            background-color: #765e58;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_items">
+            <div class="left-links">
+                <a href="index.html" class="logo">Bristol Candles</a>
+            </div>
+            <div class="right-links">
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="basket.html">Basket</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-details">
+        <h2>College Green Candle</h2>
+        <img src="cgreen.jpg" alt="College Green Candle" style="width: 300px;">
+        <p>Indulge your senses with a captivating blend inspired by the vibrant spirit of Bristol.</p>
+        <p>Price: £9.99</p>
+        <!-- Add to Basket Button -->
+        <button onclick="addToBasket('college_green')">Add to Basket</button>
+    </section>
+
+    <h2 class="center">Featured Products</h2>
+    <section class="featured-products">
+        <!-- Display featured products -->
+        <div class="product">
+            <img src="clifton.jpg" alt="Clifton Candle" style="width: 300px;">
+            <h3>Clifton</h3>
+            <p>Experience the unique aroma and elegance of Clifton candle.</p>
+            <a href="pClifton.html">View Details</a>
+        </div>
+
+        <div class="product">
+            <img src="fpond.jpg" alt="Fishponds Candle" style="width: 300px;">
+            <h3>Fishponds</h3>
+            <p>Immerse yourself in the soothing scent of Fishponds candle.</p>
+            <a href="pFponds.html">View Details</a>
+        </div>
+        <!-- Add more featured products as needed -->
+    </section>
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html" class="logo">Bristol Candles</a>
+            </div>
+            <div class="footer-links">
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="basket.html" class="active">Basket</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+            <div class="footer-social">
+                <!-- Social media icons or links here -->
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bristol Candles. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Optional: Include your JavaScript for handling basket functionality -->
+    <script src="basket.js"></script>
+</body>
+</html>
