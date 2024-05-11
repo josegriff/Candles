@@ -2,6 +2,7 @@
 Welcome to the Bristol Candle! This repository contains the source code and assets for an online platform dedicated to selling high-quality candles. The website aims to provide users with a seamless shopping experience, showcasing a diverse range of artisanal candles crafted with care and precision.
 
 Introduction:
+
 The Bristol Candle aims to tap into the growing market demand for artisanal candles by establishing an online platform for candle enthusiasts. Leveraging modern web technologies and user-centric design principles, the website offers a curated selection of candles, enticing visuals, and intuitive navigation to enhance the shopping experience.
 
 Features:
